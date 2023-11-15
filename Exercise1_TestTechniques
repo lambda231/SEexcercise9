@@ -1,0 +1,51 @@
+Exercise 1 - Equivalence partitioning and Boundary Value Analysis
+Description:
+  A savings account in a bank earns a different rate of interest depending on the balance in the account. The interest rate will be calculated basing on the current balance of customers. If a balance in the range $0 up to $100 has a 3% interest rate, a balance over $100 and up to $1000 has a 5% inter-est rate, and balances of $1000 and over have a 7% interest rate. For example:
+  calculateInterest(150) --> 5%
+Task:
+  Identify test cases using equivalence partitions and boundary value.
+  Test case for input: 50, 500, 999, 1200, 100, 1000
+
+
+Exercise 2 - Path Testing
+  Description: consider the program below
+    int randomfunction(x,y,z){
+      if x ≠ 0 then y := 5;
+      else z := z – x;
+      end if;
+      if z > 1 then z := z / x;
+      else z := 0;
+      end if;
+      return (x+y+z)
+    }
+  Task: 
+    1. Construct the control flow graph of the code above
+	   x != 0 => y = 5      => z > 1 => z = z/x  => return (x+y+z)
+	   else	  => z = z - x     else => z = 0
+    2. Identify a minimum number of test cases to achieve:
+          2a. Statement coverage: every possible statement is covered: 2
+          2b. Path coverage: every possible combination of logical branches is covered: 4
+
+Exercise 3: Use case testing
+	Write two test cases for a function Login of a eLearning portal, one for a succesful login and one for unsuccesful login. The login page has two fields: username, password and two buttons: Submit and Reset.
+	Use the template below:
+      Test case name/id  			: Login (Correct)
+      Related screens 				:
+      Pre-conditions	  			: 
+      Actions						: Press Login
+      Inputs						: Input username and password (correct)
+      Expected Outputs 			    : Accept login
+      Testing environment			:
+
+
+	  Test case name/id  			: Login (False)
+      Related screens 				:
+      Pre-conditions	  			: 
+      Actions						: Press Login
+      Inputs						: Input username and password (wrong)
+      Expected Outputs 			    : Deny access
+      Testing environment			:
+
+
+-------------------------------------------------------------------------------------------------------------------------
+solution is available in the attached docx file. password for accessing the file is testing
